@@ -49,3 +49,54 @@
     transform: translateX(10px) rotate(-45deg);
     transform-origin: left bottom;
 }
+
+/*DataCounter*/
+.dtcntr {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#timeLeft {
+    display: flex;
+    gap: 1em;
+}
+
+#timeLeft p {
+    --size: 4em;
+    position: relative;
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    color: #FFFFFF;
+    background-color: #2A2A2A;
+    text-align: center;
+    line-height: var(--size);
+}
+
+#timeLeft p::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    bottom: -3em;
+    color: #2A2A2A;
+}
+
+.dtcntrday:after {
+    content: 'Дня';
+}
+
+.dtcntrhr::after {
+    content: 'Часов';
+}
+
+.dtcntrmnt::after {
+    content: 'Минут';
+}
+
+.dtcntrscnd::after {
+    content: 'Секунд';
+}
