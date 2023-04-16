@@ -1,0 +1,51 @@
+.whysc * {
+    box-sizing: border-box;
+}
+
+.whybdy {
+    display: flex;
+    flex-wrap: wrap;
+    padding:1%;
+    gap: 3%;
+}
+
+.whislce {
+    width: 30%;
+    padding: 2% 0;
+}
+
+.whycrcl {
+    width: 5em;
+    height: 5em;
+    background-color: orange;
+    border-radius: 50%;
+    position: relative;
+}
+
+.whywrpr>h2, .whytitle {
+    font-weight: bold;
+}
+
+.whycrcl::before {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    height: 25%;
+    width: 0.2em;
+    background-color: #FFFFFF;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+.whycrcl::after {
+    position: absolute;
+    left: 35%;
+    bottom: 35%;
+    height: 0.2em;
+    width: 40%;
+    background-color: #FFFFFF;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
